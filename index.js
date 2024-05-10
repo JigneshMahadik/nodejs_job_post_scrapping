@@ -47,7 +47,7 @@ const jobPosts = async()=>{
 
             // location
             const city = container.find('[class="city"]').text();
-            const address = container.find('span [class="gray-light hidden-sm hidden-xs"]').text();
+            const address = container.find('span [class="gray-light hidden-sm hidden-xs"]').text().split("+")[0];
             const location = city +" "+address;
             // console.log(location);
 
